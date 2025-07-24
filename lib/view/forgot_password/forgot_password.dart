@@ -22,11 +22,10 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
     @override
 
     void dispose() {
-      // TODO: implement dispose
-      super.dispose();
-
       emailController.dispose();
       emailFocusNode.dispose();
+
+      super.dispose();
 
     }
 
