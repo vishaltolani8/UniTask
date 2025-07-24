@@ -34,14 +34,21 @@ class _AdminSignupScreenState extends State<AdminSignupScreen> {
   @override
 
   void dispose() {
-    // TODO: implement dispose
-    super.dispose();
-
+    usernameController.dispose();
+    courseNametController.dispose();
+    phoneNumberController.dispose();
     emailController.dispose();
     passwordController.dispose();
+    confirmPassController.dispose();
 
     emailFocusNode.dispose();
     passwordFocusNode.dispose();
+    confirmPassFocusNode.dispose();
+    usernameFocusNode.dispose();
+    phoneNumberFocusNode.dispose();
+    courseNameFocusNode.dispose();
+
+    super.dispose();
 
   }
 
